@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Create a Post </title>
+</head>
+
+<body style="text-align: center; background-color: rgb(238, 241, 230)";>
+<h1>CREATE A POST </h1>
+<form action="" method="POST" style="border: 5px solid rgb(198, 16, 177); margin-left: 450px; margin-right: 450px;">
+{% csrf_token %}
+TITLE: <input type="text" style="margin-top: 20px; "name="title"/><br/>
+CONTENT: <br/>
+<textarea cols="35" rows="8" name="content">
+</textarea><br/>
+SUMMARY: <br/>
+<input type="text" name="summary" style="height: 100px;"><br/>
+<input type="submit" style="padding: 20px; margin: 20px;" value="post"/>
+</form>
+</body>
+
+</html>
